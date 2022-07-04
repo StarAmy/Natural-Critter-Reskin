@@ -1,63 +1,70 @@
 {
     "Format": "1.23",
+      "ConfigSchema": {
+         "Critter Reskin": {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+     },
     "Changes": [
          {
         "Action": "EditImage",
         "Target": "Maps/springobjects",
         "FromFile": "assets/amycritterobjects.png",
-  "FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 32 }, 
-        "ToArea": { "X": 0, "Y": 2288, "Width": 384, "Height": 32 },
+        "FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 32 }, 
+        "ToArea": { "X": 0, "Y": 1488, "Width": 384, "Height": 32 },
      },
+     // 34 to 22, new target is 1488
      {
           "Action": "EditData",
           "LogName": "Critter Object Data",
           "Target": "Data/ObjectInformation",
           "Entries": {
-             "3432": "Dark Green Bullfrog/45/-16/Basic -23/Dark Green Bullfrog/A bit slimy and surprised to see you.",
-             "3433": "Light Green Bullfrog/45/-16/Basic -23/Light Green Bullfrog/A bit slimy and surprised to see you.",
-             "3434": "Red Squirrel/50/-16/Basic -18/Red Squirrel/A quick scavenger common in forests and towns.",
-             "3435": "Grey Rabbit/50/-16/Basic -18/Grey Rabbit/Shy woodland resident with a soft coat.",
-             "3436": "White Rabbit/60/-16/Basic -18/White Rabbit/Shy woodland resident with a soft coat.",
-             "3437": "Brown Finch/55/-16/Basic -18/Brown Finch/A small bird common in towns and forests.",
-             "3438": "Woodpecker/75/-16/Basic -18/Woodpecker/Don't let it into the orchards.",
-             "3439": "Seagull/80/-16/Basic -18/Seagull/Commonly seen harrassing beach picnics.",
-             "3440": "Crow/80/-16/Basic -18/Crow/This one seems a little apologetic.",
-             "3441": "Bluebird/80/-16/Basic -18/Bluebird/A bright little bird with a pretty call.",
-             "3442": "Stellars Jay/80/-16/Basic -18/Stellars Jay/A bold, friendly bird with bright plumage.",
-             "3443": "Cardinal/85/-16/Basic -18/Cardinal/A shy bird with striking plumage.",
-             "3444": "Dove/65/-16/Basic -18/Dove/A sweet, shy bird with a pretty warble.",
-             "3445": "Horned Owl/220/-16/Basic -18/Horned Owl/Somewhat grumpy looking, and too large for a cage.",
-             "3446": "Bat/55/-16/Basic -23/Bat/Seems a little far from any cave.",
-             "3452": "Hyacinth Macaw Egg/120/0/Egg -5/Hyacinth Macaw Egg/This might turn into a friendly farm resident.",
-             "3453": "Scarlet Macaw Egg/120/0/Egg -5/Scarlet Macaw Egg/This might turn into a friendly farm resident.",
-             "3454": "Blue and Gold Macaw Egg/120/0/Egg -5/Blue and Gold Macaw Egg/This might turn into a friendly farm resident.",
-             "3455": "Military Macaw Egg/120/0/Egg -5/Military Macaw Egg/This might turn into a friendly farm resident.",
-             "3456": "Monarch Butterfly/40/-16/Basic -23/Monarch Butterfly/A beautiful warm weather butterfly.",
-             "3457": "Emporer Butterfly/40/-16/Basic -23/Emporer Butterfly/A beautiful warm weather butterfly.",
-             "3458": "Zebra Butterfly/40/-16/Basic -23/Zebra Butterfly/A beautiful warm weather butterfly.",
-             "3459": "Birdwing Butterfly/40/-16/Basic -23/Birdwing Butterfly/A beautiful warm weather butterfly.",
-             "3460": "Swallowtail Butterfly/40/-16/Basic -23/Swallowtail Butterfly/A beautiful warm weather butterfly.",
-             "3461": "Handmaiden Moth/40/-16/Basic -23/Handmaiden Moth/A beautiful warm weather butterfly.",
-             "3462": "Phantom Butterfly/30/-16/Basic -23/Phantom Butterfly/A happy little sign of spring.",
-             "3463": "Mourning Cloak Butterfly/30/-16/Basic -23/Mourning Cloak Butterfly/A happy little sign of spring.",
-             "3464": "Green Sphinx Moth/30/-16/Basic -23/Green Sphinx Moth/A happy little sign of spring.",
-             "3465": "Little Blue Butterfly/30/-16/Basic -23/Little Blue Butterfly/A happy little sign of spring.",
-             "3466": "Little Yellow Butterfly/30/-16/Basic -23/Little Yellow Butterfly/A happy little sign of spring.",
-             "3467": "Cabbage Butterfly/30/-16/Basic -23/Cabbage Butterfly/A happy little sign of spring.",
-             "3468": "Kaiser Butterfly/50/-16/Basic -23/Kaiser Butterfly/A striking tropical beauty.",
-             "3469": "Sunset Moth/50/-16/Basic -23/Sunset Moth/A striking tropical beauty.",
-             "3470": "Blue Morpho Butterfly/50/-16/Basic -23/Blue Morpho Butterfly/A striking tropical beauty.",
-             "3471": "Question Mark Butterfly/50/-16/Basic -23/Question Mark Butterfly/A striking tropical beauty.",
-             "3472": "Crimson Rose Butterfly/50/-16/Basic -23/Crimson Rose Butterfly/A lovely fall butterfly.",
-             "3473": "Aureus Butterfly/50/-16/Basic -23/Aureus Butterfly/A lovely fall butterfly..",
-             "3474": "Garden Tiger Moth/50/-16/Basic -23/Garden Tiger Moth/A lovely fall butterfly.",
-             "3475": "Spotted Moth/50/-16/RBasic -23/Spotted Moth/A lovely fall butterfly.",
-             "3476": "Blue Duke Butterfly/50/-16/Basic -23/Blue Duke Butterfly/A lovely fall butterfly.",
-             "3477": "Sage Green Butterfly/50/-16/Basic -23/Sage Green Butterfly/A lovely fall butterfly.",
+             "2232": "Dark Green Bullfrog/45/-16/Basic -23/Dark Green Bullfrog/A bit slimy and surprised to see you.",
+             "2233": "Light Green Bullfrog/45/-16/Basic -23/Light Green Bullfrog/A bit slimy and surprised to see you.",
+             "2234": "Red Squirrel/50/-16/Basic -18/Red Squirrel/A quick scavenger common in forests and towns.",
+             "2235": "Grey Rabbit/50/-16/Basic -18/Grey Rabbit/Shy woodland resident with a soft coat.",
+             "2236": "White Rabbit/60/-16/Basic -18/White Rabbit/Shy woodland resident with a soft coat.",
+             "2237": "Brown Finch/55/-16/Basic -18/Brown Finch/A small bird common in towns and forests.",
+             "2238": "Woodpecker/75/-16/Basic -18/Woodpecker/Don't let it into the orchards.",
+             "2239": "Seagull/80/-16/Basic -18/Seagull/Commonly seen harrassing beach picnics.",
+             "2240": "Crow/80/-16/Basic -18/Crow/This one seems a little apologetic.",
+             "2241": "Bluebird/80/-16/Basic -18/Bluebird/A bright little bird with a pretty call.",
+             "2242": "Stellars Jay/80/-16/Basic -18/Stellars Jay/A bold, friendly bird with bright plumage.",
+             "2243": "Cardinal/85/-16/Basic -18/Cardinal/A shy bird with striking plumage.",
+             "2244": "Dove/65/-16/Basic -18/Dove/A sweet, shy bird with a pretty warble.",
+             "2245": "Horned Owl/220/-16/Basic -18/Horned Owl/Somewhat grumpy looking, and too large for a cage.",
+             "2246": "Bat/55/-16/Basic -23/Bat/Seems a little far from any cave.",
+             "2252": "Hyacinth Macaw Egg/120/0/Egg -5/Hyacinth Macaw Egg/This might turn into a friendly farm resident.",
+             "2253": "Scarlet Macaw Egg/120/0/Egg -5/Scarlet Macaw Egg/This might turn into a friendly farm resident.",
+             "2254": "Blue and Gold Macaw Egg/120/0/Egg -5/Blue and Gold Macaw Egg/This might turn into a friendly farm resident.",
+             "2255": "Military Macaw Egg/120/0/Egg -5/Military Macaw Egg/This might turn into a friendly farm resident.",
+             "2256": "Monarch Butterfly/40/-16/Basic -23/Monarch Butterfly/A beautiful warm weather butterfly.",
+             "2257": "Emporer Butterfly/40/-16/Basic -23/Emporer Butterfly/A beautiful warm weather butterfly.",
+             "2258": "Zebra Butterfly/40/-16/Basic -23/Zebra Butterfly/A beautiful warm weather butterfly.",
+             "2259": "Birdwing Butterfly/40/-16/Basic -23/Birdwing Butterfly/A beautiful warm weather butterfly.",
+             "2260": "Swallowtail Butterfly/40/-16/Basic -23/Swallowtail Butterfly/A beautiful warm weather butterfly.",
+             "2261": "Handmaiden Moth/40/-16/Basic -23/Handmaiden Moth/A beautiful warm weather butterfly.",
+             "2262": "Phantom Butterfly/30/-16/Basic -23/Phantom Butterfly/A happy little sign of spring.",
+             "2263": "Mourning Cloak Butterfly/30/-16/Basic -23/Mourning Cloak Butterfly/A happy little sign of spring.",
+             "2264": "Green Sphinx Moth/30/-16/Basic -23/Green Sphinx Moth/A happy little sign of spring.",
+             "2265": "Little Blue Butterfly/30/-16/Basic -23/Little Blue Butterfly/A happy little sign of spring.",
+             "2266": "Little Yellow Butterfly/30/-16/Basic -23/Little Yellow Butterfly/A happy little sign of spring.",
+             "2267": "Cabbage Butterfly/30/-16/Basic -23/Cabbage Butterfly/A happy little sign of spring.",
+             "2268": "Kaiser Butterfly/50/-16/Basic -23/Kaiser Butterfly/A striking tropical beauty.",
+             "2269": "Sunset Moth/50/-16/Basic -23/Sunset Moth/A striking tropical beauty.",
+             "2270": "Blue Morpho Butterfly/50/-16/Basic -23/Blue Morpho Butterfly/A striking tropical beauty.",
+             "2271": "Question Mark Butterfly/50/-16/Basic -23/Question Mark Butterfly/A striking tropical beauty.",
+             "2272": "Crimson Rose Butterfly/50/-16/Basic -23/Crimson Rose Butterfly/A lovely fall butterfly.",
+             "2273": "Aureus Butterfly/50/-16/Basic -23/Aureus Butterfly/A lovely fall butterfly..",
+             "2274": "Garden Tiger Moth/50/-16/Basic -23/Garden Tiger Moth/A lovely fall butterfly.",
+             "2275": "Spotted Moth/50/-16/RBasic -23/Spotted Moth/A lovely fall butterfly.",
+             "2276": "Blue Duke Butterfly/50/-16/Basic -23/Blue Duke Butterfly/A lovely fall butterfly.",
+             "2277": "Sage Green Butterfly/50/-16/Basic -23/Sage Green Butterfly/A lovely fall butterfly.",
            }
          },
         {
-          "When": {"Season":"spring",},
+          "When": {"Season":"spring", "Critter Reskin":"true"},
           "LogName": "StarAmy Natural Terrarium Project Critter Reskin Spring",
           "Action": "EditImage",
           "Target": "TileSheets/critters",
@@ -66,7 +73,7 @@
           "Enabled": "true",
        },
         {
-          "When": {"Season":"summer",},
+          "When": {"Season":"summer", "Critter Reskin":"true"},
           "LogName": "StarAmy Natural Terrarium Project Critter Reskin Summer",
           "Action": "EditImage",
           "Target": "TileSheets/critters",
@@ -75,7 +82,7 @@
           "Enabled": "true",
        },
        {
-          "When": {"Season":"fall",},
+          "When": {"Season":"fall", "Critter Reskin":"true"},
           "LogName": "StarAmy Natural Terrarium Project Critter Reskin Fall",
           "Action": "EditImage",
           "Target": "TileSheets/critters",
@@ -84,7 +91,7 @@
           "Enabled": "true",
        },
       {
-          "When": {"Season":"winter",},
+          "When": {"Season":"winter", "Critter Reskin":"true"},
           "LogName": "StarAmy Natural Terrarium Project Critter Reskin Winter",
           "Action": "EditImage",
           "Target": "TileSheets/critters",
@@ -108,46 +115,47 @@
       "Action": "EditData",
       "Target": "Data/AquariumFish",
       "Entries": {
-        "3433": "1300/crawl/1304 1305 1306 1305 1304/1300/1300 1301 1302 1303 1304/1304",
-        "3432": "1307/crawl/1311 1312 1313 1312 1311/1307/1307 1308 1309 1310 1311/1311",
-        "3474": "1314/float/1314 1315 1316 1317 1316 1315/1314 1315 1316 1317 1316 1315/1314 1315 1316 1317 1316 1315/1314 1315 1316 1317 1316 1315",
-        "3446": "1318/ground/1318/1379 1319 1378 1319/1379 1319 1378 1319/1379 1319 1378 1319",
-        "3456": "1320/float/1320 1321 1322 1323 1322 1321/1320 1321 1322 1323 1322 1321/1320 1321 1322 1323 1322 1321/1320 1321 1322 1323 1322 1321",
-        "3477": "1324/float/1324 1325 1326 1327 1326 1325/1324 1325 1326 1327 1326 1325/1324 1325 1326 1327 1326 1325/1324 1325 1326 1327 1326 1325",
-        "3460": "1328/float/1328 1329 1330 1331 1330 1329/1328 1329 1330 1331 1330 1329/1328 1329 1330 1331 1330 1329/1328 1329 1330 1331 1330 1329",
-        "3459": "1332/float/1332 1333 1334 1335 1334 1333/1332 1333 1334 1335 1334 1333/1332 1333 1334 1335 1334 1333/1332 1333 1334 1335 1334 1333",
-        "3472": "1336/float/1336 1337 1338 1339 1338 1337/1336 1337 1338 1339 1338 1337/1336 1337 1338 1339 1338 1337/1336 1337 1338 1339 1338 1337",
-        "3457": "1340/float/1340 1341 1342 1343 1342 1341/1340 1341 1342 1343 1342 1341/1340 1341 1342 1343 1342 1341/1340 1341 1342 1343 1342 1341",
-        "3471": "1344/float/1344 1345 1346 1347 1346 1345/1344 1345 1346 1347 1346 1345/1344 1345 1346 1347 1346 1345/1344 1345 1346 1347 1346 1345",
-        "3470": "1348/float/1348 1349 1350 1351 1350 1349/1348 1349 1350 1351 1350 1349/1348 1349 1350 1351 1350 1349/1348 1349 1350 1351 1350 1349",
-        "3469": "1352/float/1352 1353 1354 1355 1354 1353/1352 1353 1354 1355 1354 1353/1352 1353 1354 1355 1354 1353/1352 1353 1354 1355 1354 1353",
-        "3473": "1356/float/1356 1357 1358 1359 1358 1357/1356 1357 1358 1359 1358 1357/1356 1357 1358 1359 1358 1357/1356 1357 1358 1359 1358 1357",
-        "3463": "1360/float/1360 1361 1362 1361/1360 1361 1362 1361/1360 1361 1362 1361/1360 1361 1362 1361",
-        "3464": "1363/float/1363 1364 1365 1364/1363 1364 1365 1364/1363 1364 1365 1364/1363 1364 1365 1364",
-        "3467": "1366/float/1366 1367 1368 1367/1366 1367 1368 1367/1366 1367 1368 1367/1366 1367 1368 1367",
-        "3462": "1369/float/1369 1370 1371 1370/1369 1370 1371 1370/1369 1370 1371 1370/1369 1370 1371 1370",
-        "3465": "1372/float/1372 1373 1374 1373/1372 1373 1374 1373/1372 1373 1374 1373/1372 1373 1374 1373",
-        "3466": "1375/float/1375 1376 1377 1376/1375 1376 1377 1376/1375 1376 1377 1376/1375 1376 1377 1376",
-        "3436": "1380/ground/1380/1381/1382/1383",
-        "3435": "1384/ground/1384/1385/1386/1387",
-        "3434": "1389/ground/1389/1390 1391/1392 1393/1394 1395",
-        "3468": "1396/float/1396 1397 1398 1399 1398 1397/1396 1397 1398 1399 1398 1397/1396 1397 1398 1399 1398 1397/1396 1397 1398 1399 1398 1397",
-        "3437": "1400/ground/1400/1401 1402 1403 1402/1401 1402 1403 1402/1401 1402 1403 1402",
-        "3441": "1404/ground/1404/1405 1406 1407 1406/1405 1406 1407 1406/1405 1406 1407 1406",
-        "3438": "1408/ground/1408/1409 1410 1411 1410/1409 1410 1411 1410/1409 1410 1411 1410",
-        "3461": "1412/float/1412 1413 1414 1415 1414 1413/1412 1413 1414 1415 1414 1413/1412 1413 1414 1415 1414 1413/1412 1413 1414 1415 1414 1413",
-        "3458": "1416/float/1416 1417 1418 1419 1418 1417/1416 1417 1418 1419 1418 1417/1416 1417 1418 1419 1418 1417/1416 1417 1418 1419 1418 1417",
-        "3443": "1420/ground/1420/1421 1422 1423 1422/1421 1422 1423 1422/1421 1422 1423 1422",
-        "3442": "1424/ground/1424/1425 1426 1427 1426/1425 1426 1427 1426/1425 1426 1427 1426",
-        "3444": "1428/ground/1428/1429 1430 1431 1430/1429 1430 1431 1430/1429 1430 1431 1430",
-        "3475": "1432/float/1432 1433 1434 1435 1434 1433/1432 1433 1434 1435 1434 1433/1432 1433 1434 1435 1434 1433/1432 1433 1434 1435 1434 1433",
-        "3476": "1436/float/1436 1437 1438 1439 1438 1437/1436 1437 1438 1439 1438 1437/1436 1437 1438 1439 1438 1437/1436 1437 1438 1439 1438 1437",
+        "2233": "1300/crawl/1304 1305 1306 1305 1304/1300/1300 1301 1302 1303 1304/1304",
+        "2232": "1307/crawl/1311 1312 1313 1312 1311/1307/1307 1308 1309 1310 1311/1311",
+        "2274": "1314/float/1314 1315 1316 1317 1316 1315/1314 1315 1316 1317 1316 1315/1314 1315 1316 1317 1316 1315/1314 1315 1316 1317 1316 1315",
+        "2246": "1318/ground/1318/1379 1319 1378 1319/1379 1319 1378 1319/1379 1319 1378 1319",
+        "2256": "1320/float/1320 1321 1322 1323 1322 1321/1320 1321 1322 1323 1322 1321/1320 1321 1322 1323 1322 1321/1320 1321 1322 1323 1322 1321",
+        "2277": "1324/float/1324 1325 1326 1327 1326 1325/1324 1325 1326 1327 1326 1325/1324 1325 1326 1327 1326 1325/1324 1325 1326 1327 1326 1325",
+        "2260": "1328/float/1328 1329 1330 1331 1330 1329/1328 1329 1330 1331 1330 1329/1328 1329 1330 1331 1330 1329/1328 1329 1330 1331 1330 1329",
+        "2259": "1332/float/1332 1333 1334 1335 1334 1333/1332 1333 1334 1335 1334 1333/1332 1333 1334 1335 1334 1333/1332 1333 1334 1335 1334 1333",
+        "2272": "1336/float/1336 1337 1338 1339 1338 1337/1336 1337 1338 1339 1338 1337/1336 1337 1338 1339 1338 1337/1336 1337 1338 1339 1338 1337",
+        "2257": "1340/float/1340 1341 1342 1343 1342 1341/1340 1341 1342 1343 1342 1341/1340 1341 1342 1343 1342 1341/1340 1341 1342 1343 1342 1341",
+        "2271": "1344/float/1344 1345 1346 1347 1346 1345/1344 1345 1346 1347 1346 1345/1344 1345 1346 1347 1346 1345/1344 1345 1346 1347 1346 1345",
+        "2270": "1348/float/1348 1349 1350 1351 1350 1349/1348 1349 1350 1351 1350 1349/1348 1349 1350 1351 1350 1349/1348 1349 1350 1351 1350 1349",
+        "2269": "1352/float/1352 1353 1354 1355 1354 1353/1352 1353 1354 1355 1354 1353/1352 1353 1354 1355 1354 1353/1352 1353 1354 1355 1354 1353",
+        "2273": "1356/float/1356 1357 1358 1359 1358 1357/1356 1357 1358 1359 1358 1357/1356 1357 1358 1359 1358 1357/1356 1357 1358 1359 1358 1357",
+        "2263": "1360/float/1360 1361 1362 1361/1360 1361 1362 1361/1360 1361 1362 1361/1360 1361 1362 1361",
+        "2264": "1363/float/1363 1364 1365 1364/1363 1364 1365 1364/1363 1364 1365 1364/1363 1364 1365 1364",
+        "2267": "1366/float/1366 1367 1368 1367/1366 1367 1368 1367/1366 1367 1368 1367/1366 1367 1368 1367",
+        "2262": "1369/float/1369 1370 1371 1370/1369 1370 1371 1370/1369 1370 1371 1370/1369 1370 1371 1370",
+        "2265": "1372/float/1372 1373 1374 1373/1372 1373 1374 1373/1372 1373 1374 1373/1372 1373 1374 1373",
+        "2266": "1375/float/1375 1376 1377 1376/1375 1376 1377 1376/1375 1376 1377 1376/1375 1376 1377 1376",
+        "2236": "1380/ground/1380/1381/1382/1383",
+        "2235": "1384/ground/1384/1385/1386/1387",
+        "2234": "1389/ground/1389/1390 1391/1392 1393/1394 1395",
+        "2268": "1396/float/1396 1397 1398 1399 1398 1397/1396 1397 1398 1399 1398 1397/1396 1397 1398 1399 1398 1397/1396 1397 1398 1399 1398 1397",
+        "2237": "1400/ground/1400/1401 1402 1403 1402/1401 1402 1403 1402/1401 1402 1403 1402",
+        "2241": "1404/ground/1404/1405 1406 1407 1406/1405 1406 1407 1406/1405 1406 1407 1406",
+        "2238": "1408/ground/1408/1409 1410 1411 1410/1409 1410 1411 1410/1409 1410 1411 1410",
+        "2261": "1412/float/1412 1413 1414 1415 1414 1413/1412 1413 1414 1415 1414 1413/1412 1413 1414 1415 1414 1413/1412 1413 1414 1415 1414 1413",
+        "2258": "1416/float/1416 1417 1418 1419 1418 1417/1416 1417 1418 1419 1418 1417/1416 1417 1418 1419 1418 1417/1416 1417 1418 1419 1418 1417",
+        "2243": "1420/ground/1420/1421 1422 1423 1422/1421 1422 1423 1422/1421 1422 1423 1422",
+        "2242": "1424/ground/1424/1425 1426 1427 1426/1425 1426 1427 1426/1425 1426 1427 1426",
+        "2244": "1428/ground/1428/1429 1430 1431 1430/1429 1430 1431 1430/1429 1430 1431 1430",
+        "2275": "1432/float/1432 1433 1434 1435 1434 1433/1432 1433 1434 1435 1434 1433/1432 1433 1434 1435 1434 1433/1432 1433 1434 1435 1434 1433",
+        "2276": "1436/float/1436 1437 1438 1439 1438 1437/1436 1437 1438 1439 1438 1437/1436 1437 1438 1439 1438 1437/1436 1437 1438 1439 1438 1437",
     },
     },
     {
           "Action": "EditImage",
           "Target": "LooseSprites/parrots",
           "FromFile": "assets/parrots.png",
+          "When": {"Critter Reskin":"true"},
           "PatchMode": "Replace",
           "Enabled": "true",
     }, 
@@ -155,6 +163,7 @@
           "Action": "EditImage",
           "Target": "LooseSprites/birds",
           "FromFile": "assets/birds.png",
+          "When": {"Critter Reskin":"true"},
           "PatchMode": "Replace",
           "Enabled": "true",
     }, 
@@ -166,188 +175,188 @@
      {
          "Operation": "Append",
          "Target": ["Fields", "Beach", 0],//spring forage 
-         "Value": "3439 .3",
+         "Value": "2239 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Beach", 1],//summer forage 
-         "Value": "3439 .3",
+         "Value": "2239 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Beach", 2],//fall forage 
-         "Value": "3439 .3",
+         "Value": "2239 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Beach", 3],//winter forage 
-         "Value": "3439 .3",
+         "Value": "2239 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
 
        {
          "Operation": "Append",
          "Target": ["Fields", "Woods", 0],//spring forage 
-         "Value": "3438 .2 3433 .5 3462 .3 3463 .3 3464 .3 3465 .3 3466 .3 3467 .3",
+         "Value": "2238 .2 2233 .5 2262 .3 2263 .3 2264 .3 2265 .3 2266 .3 2267 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Woods", 1],//summer forage 
-         "Value": "3438 .2 3432 .5 3456 .3 3457 .3 3458 .3 3459 .3 3460 .3 3461 .3",
+         "Value": "2238 .2 2232 .5 2256 .3 2257 .3 2258 .3 2259 .3 2260 .3 2261 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Woods", 2],//fall forage 
-         "Value": "3438 .2 3472 .3 3473 .3 3474 .3 3475 .3 3476 .3 3477 .3",
+         "Value": "2238 .2 2272 .3 2273 .3 2274 .3 2275 .3 2276 .3 2277 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 0],//spring forage 
-         "Value": "3446 .4 3436 .3 3462 .3 3463 .3 3464 .3 3465 .3 3466 .3 3467 .3",
+         "Value": "2246 .4 2236 .3 2262 .3 2263 .3 2264 .3 2265 .3 2266 .3 2267 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 1],//summer forage 
-         "Value": "3446 .4 3445 .2 3435 .3 3456 .3 3457 .3 3458 .3 3459 .3 3460 .3 3461 .3",
+         "Value": "2246 .4 2245 .2 2235 .3 2256 .3 2257 .3 2258 .3 2259 .3 2260 .3 2261 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 2],//fall forage 
-         "Value": "3446 .4 3435 .4 3472 .3 3473 .3 3474 .3 3475 .3 3476 .3 3477 .3",
+         "Value": "2246 .4 2235 .4 2272 .3 2273 .3 2274 .3 2275 .3 2276 .3 2277 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 3],//winter forage 
-         "Value": "3436 .4",
+         "Value": "2236 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 0],//spring forage 
-         "Value": "3440 .3 3462 .3 3463 .3 3464 .3 3465 .3 3466 .3 3467 .3 3437 .4 3444 .2",
+         "Value": "2240 .3 2262 .3 2263 .3 2264 .3 2265 .3 2266 .3 2267 .3 2237 .4 2244 .2",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 1],//summer forage 
-         "Value": "3440 .3 3434 .4 3456 .3 3457 .3 3458 .3 3459 .3 3460 .3 3461 .3 3442 .4",
+         "Value": "2240 .3 2234 .4 2256 .3 2257 .3 2258 .3 2259 .3 2260 .3 2261 .3 2242 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 2],//fall forage 
-         "Value": "3440 .3 3434 .4 3472 .3 3473 .3 3474 .3 3475 .3 3476 .3 3477 .3 3441 .4",
+         "Value": "2240 .3 2234 .4 2272 .3 2273 .3 2274 .3 2275 .3 2276 .3 2277 .3 2241 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 3],//winter forage 
-         "Value": "3440 .3 3443 .4",
+         "Value": "2240 .3 2243 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Town", 0],//spring forage 
-         "Value": "3462 .3 3463 .3 3464 .3 3465 .3 3466 .3 3467 .3 3437 .4 3444 .2",
+         "Value": "2262 .3 2263 .3 2264 .3 2265 .3 2266 .3 2267 .3 2237 .4 2244 .2",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Town", 1],//summer forage 
-         "Value": "3456 .3 3457 .3 3458 .3 3459 .3 3460 .3 3461 .3 3442 .4",
+         "Value": "2256 .3 2257 .3 2258 .3 2259 .3 2260 .3 2261 .3 2242 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Town", 2],//fall forage 
-         "Value": "3472 .3 3473 .3 3474 .3 3475 .3 3476 .3 3477 .3 3441 .4",
+         "Value": "2272 .3 2273 .3 2274 .3 2275 .3 2276 .3 2277 .3 2241 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Town", 3],//winter forage 
-         "Value": "3443 .4",
+         "Value": "2243 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandNorth", 0],//spring forage 
-         "Value": "3452 .2 3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2252 .2 2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandNorth", 1],//summer forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandNorth", 2],//fall forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandWest", 0],//spring forage 
-         "Value": "3453 .2 3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2253 .2 2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandWest", 1],//summer forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandWest", 2],//fall forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandSouth", 0],//spring forage 
-         "Value": "3454 .2 3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2254 .2 2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandSouth", 1],//summer forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandSouth", 2],//fall forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandSouthEast", 0],//spring forage 
-         "Value": "3455 .2 3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2255 .2 2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandSouthEast", 1],//summer forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },      
       {
          "Operation": "Append",
          "Target": ["Fields", "IslandSouthEast", 2],//fall forage 
-         "Value": "3468 .3 3469 .3 3470 .3 3471 .3",
+         "Value": "2268 .3 2269 .3 2270 .3 2271 .3",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
     ]
