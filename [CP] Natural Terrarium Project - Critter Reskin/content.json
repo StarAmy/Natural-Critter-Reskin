@@ -6,6 +6,10 @@
             "AllowValues": "True, False",
             "Default": "True"
         },
+        "Item Collecting": {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
      },
     "Changes": [
          {
@@ -172,6 +176,9 @@
       "Action": "EditData",
       "LogName": "Critter Reskin Location Data",
       "Target": "Data/Locations",
+       "When":{ 
+            "Item Collecting": "True"
+        },
       "TextOperations": [
      {
          "Operation": "Append",
