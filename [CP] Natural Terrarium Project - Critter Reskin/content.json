@@ -10,6 +10,10 @@
             "AllowValues": "True, False",
             "Default": "True"
         },
+         "Reskin Emily's Parrot": {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
      },
     "Changes": [
          {
@@ -19,6 +23,18 @@
         "FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 32 }, 
         "ToArea": { "X": 0, "Y": 1488, "Width": 384, "Height": 32 },
      },
+     {
+        "Action": "EditImage",
+        "Target": "LooseSprites/Cursors",
+        "FromFile": "assets/EmilyBird.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 115, "Height": 16 }, 
+        "ToArea": { "X": 50, "Y": 148, "Width": 115, "Height": 16 },
+        "When":{ 
+            "Reskin Emily's Parrot": "True"
+        },
+         "Update": "OnTimeChange"
+     },
+
      // 34 to 22, new target is 1488
      {
           "Action": "EditData",
@@ -27,23 +43,23 @@
           "Entries": {
              "2232": "Dark Green Bullfrog/45/0/Basic -23/Dark Green Bullfrog/A bit slimy and surprised to see you.",
              "2233": "Light Green Bullfrog/45/0/Basic -23/Light Green Bullfrog/A bit slimy and surprised to see you.",
-             "2234": "Red Squirrel/50/0/Basic -18/Red Squirrel/A quick scavenger common in forests and towns.",
-             "2235": "Grey Rabbit/50/0/Basic -18/Grey Rabbit/Shy woodland resident with a soft coat.",
-             "2236": "White Rabbit/60/0/Basic -18/White Rabbit/Shy woodland resident with a soft coat.",
-             "2237": "Brown Finch/55/0/Basic -18/Brown Finch/A small bird common in towns and forests.",
-             "2238": "Woodpecker/75/0/Basic -18/Woodpecker/Don't let it into the orchards.",
-             "2239": "Seagull/80/0/Basic -18/Seagull/Commonly seen harrassing beach picnics.",
-             "2240": "Crow/80/0/Basic -18/Crow/This one seems a little apologetic.",
-             "2241": "Bluebird/80/0/Basic -18/Bluebird/A bright little bird with a pretty call.",
-             "2242": "Stellars Jay/80/0/Basic -18/Stellars Jay/A bold, friendly bird with bright plumage.",
-             "2243": "Cardinal/85/0/Basic -18/Cardinal/A shy bird with striking plumage.",
-             "2244": "Dove/65/0/Basic -18/Dove/A sweet, shy bird with a pretty warble.",
-             "2245": "Horned Owl/220/0/Basic -18/Horned Owl/Somewhat grumpy looking, and too large for a cage.",
+             "2234": "Red Squirrel/50/0/Basic -23/Red Squirrel/A quick scavenger common in forests and towns.",
+             "2235": "Grey Rabbit/50/0/Basic -23/Grey Rabbit/Shy woodland resident with a soft coat.",
+             "2236": "White Rabbit/60/0/Basic -23/White Rabbit/Shy woodland resident with a soft coat.",
+             "2237": "Brown Finch/55/0/Basic -23/Brown Finch/A small bird common in towns and forests.",
+             "2238": "Woodpecker/75/0/Basic -23/Woodpecker/Don't let it into the orchards.",
+             "2239": "Seagull/80/0/Basic -23/Seagull/Commonly seen harrassing beach picnics.",
+             "2240": "Crow/80/0/Basic -23/Crow/This one seems a little apologetic.",
+             "2241": "Bluebird/80/0/Basic -23/Bluebird/A bright little bird with a pretty call.",
+             "2242": "Stellars Jay/80/0/Basic -23/Stellars Jay/A bold, friendly bird with bright plumage.",
+             "2243": "Cardinal/85/0/Basic -23/Cardinal/A shy bird with striking plumage.",
+             "2244": "Dove/65/0/Basic -23/Dove/A sweet, shy bird with a pretty warble.",
+             "2245": "Horned Owl/220/0/Basic -23/Horned Owl/Somewhat grumpy looking, and too large for a cage.",
              "2246": "Bat/55/0/Basic -23/Bat/Seems a little far from any cave.",
-             "2252": "Hyacinth Macaw Egg/120/0/Egg -5/Hyacinth Macaw Egg/This might turn into a friendly farm resident.",
-             "2253": "Scarlet Macaw Egg/120/0/Egg -5/Scarlet Macaw Egg/This might turn into a friendly farm resident.",
-             "2254": "Blue and Gold Macaw Egg/120/0/Egg -5/Blue and Gold Macaw Egg/This might turn into a friendly farm resident.",
-             "2255": "Military Macaw Egg/120/0/Egg -5/Military Macaw Egg/This might turn into a friendly farm resident.",
+             "2252": "Hyacinth Macaw Egg/120/0/Basic -23/Hyacinth Macaw Egg/This might turn into a friendly farm resident.",
+             "2253": "Scarlet Macaw Egg/120/0/Basic -23/Scarlet Macaw Egg/This might turn into a friendly farm resident.",
+             "2254": "Blue and Gold Macaw Egg/120/0/Basic -23/Blue and Gold Macaw Egg/This might turn into a friendly farm resident.",
+             "2255": "Military Macaw Egg/120/0/Basic -23/Military Macaw Egg/This might turn into a friendly farm resident.",
              "2256": "Monarch Butterfly/40/0/Basic -23/Monarch Butterfly/A beautiful warm weather butterfly.",
              "2257": "Emporer Butterfly/40/0/Basic -23/Emporer Butterfly/A beautiful warm weather butterfly.",
              "2258": "Zebra Butterfly/40/0/Basic -23/Zebra Butterfly/A beautiful warm weather butterfly.",
@@ -232,43 +248,43 @@
       {
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 1],//summer forage 
-         "Value": "2246 .4 2245 .2 2235 .3 2256 .3 2257 .3 2258 .3 2259 .3 2260 .3 2261 .3",
+         "Value": "2246 .6 2245 .4 2235 .5 2256 .5 2257 .5 2258 .5 2259 .5 2260 .5 2261 .5",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 2],//fall forage 
-         "Value": "2246 .4 2235 .4 2272 .3 2273 .3 2274 .3 2275 .3 2276 .3 2277 .3",
+         "Value": "2246 .6 2235 .6 2272 .5 2273 .5 2274 .5 2275 .5 2276 .5 2277 .5",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 3],//winter forage 
-         "Value": "2236 .4",
+         "Value": "2236 .6",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 0],//spring forage 
-         "Value": "2240 .3 2262 .3 2263 .3 2264 .3 2265 .3 2266 .3 2267 .3 2237 .4 2244 .2",
+         "Value": "2240 .5 2262 .5 2263 .5 2264 .5 2265 .5 2266 .5 2267 .5 2237 .6 2244 .4",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 1],//summer forage 
-         "Value": "2240 .3 2234 .4 2256 .3 2257 .3 2258 .3 2259 .3 2260 .3 2261 .3 2242 .4",
+         "Value": "2240 .5 2234 .6 2256 .5 2257 .5 2258 .5 2259 .5 2260 .5 2261 .5 2242 .6",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 2],//fall forage 
-         "Value": "2240 .3 2234 .4 2272 .3 2273 .3 2274 .3 2275 .3 2276 .3 2277 .3 2241 .4",
+         "Value": "2240 .5 2234 .6 2272 .5 2273 .5 2274 .5 2275 .5 2276 .5 2277 .5 2241 .6",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
          "Operation": "Append",
          "Target": ["Fields", "Forest", 3],//winter forage 
-         "Value": "2240 .3 2243 .4",
+         "Value": "2240 .5 2243 .6",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
@@ -310,7 +326,20 @@
        "Scarlet Macaw Egg": "bird_scarlet_macaw",
        "Blue and Gold Macaw Egg": "bird_blue_gold_macaw",
     }
-   }
+   },
+   {
+      "LogName": "Animated Reskin Critter Objects",
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/amycritterobjects_animated.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 32 },
+      "ToArea": { "X": 0, "Y": 1488, "Width": 384, "Height": 32 },
+      "AnimationFrameTime": 20,
+      "AnimationFrameCount": 8,
+      "When": {
+        "HasMod": "spacechase0.ContentPatcherAnimations"
+      }
+    },
   ]
 }
 
