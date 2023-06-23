@@ -14,6 +14,14 @@
             "AllowValues": "True, False",
             "Default": "True"
         },
+         "Reskin Gembirds": {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "Reskin Camels": {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
      },
     "Changes": [
          {
@@ -34,6 +42,77 @@
         },
          "Update": "OnTimeChange"
      },
+     {
+        "Action": "EditImage",
+        "Target": "LooseSprites/temporary_sprites_1",
+        "FromFile": "assets/Camel_Day.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 65, "Height": 49 }, 
+        "ToArea": { "X": 8, "Y": 555, "Width": 65, "Height": 49 },
+        "When":{ 
+            "Reskin Camels": "True"
+        },
+         "Update": "OnTimeChange"
+     },
+     {
+        "Action": "EditImage",
+        "Target": "LooseSprites/temporary_sprites_1",
+        "FromFile": "assets/Camel_Night.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 65, "Height": 49 }, 
+        "ToArea": { "X": 208, "Y": 591, "Width": 65, "Height": 49 },
+        "When":{ 
+            "Reskin Camels": "True"
+        },
+         "Update": "OnTimeChange"
+     },
+     /*{
+      "LogName": "Animated Camels",
+      "Action": "EditImage",
+      "Target": "LooseSprites/temporary_sprites_1",
+        "FromFile": "assets/Camel_Animated.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 65, "Height": 49 }, 
+        "ToArea": { "X": 8, "Y": 555, "Width": 65, "Height": 49 },
+      "AnimationFrameTime": 12,
+      "AnimationFrameCount": 6,
+      "When": {
+        "HasMod": "spacechase0.ContentPatcherAnimations",
+      }
+    },
+    {
+      "LogName": "Animated Camels Two",
+      "Action": "EditImage",
+      "Target": "LooseSprites/temporary_sprites_1",
+        "FromFile": "assets/Camel_Animated.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 65, "Height": 49 }, 
+        "ToArea": { "X": 208, "Y": 591, "Width": 65, "Height": 49 },
+      "AnimationFrameTime": 12,
+      "AnimationFrameCount": 6,
+      "When": {
+        "HasMod": "spacechase0.ContentPatcherAnimations",
+      }
+    },*/
+     {
+        "Action": "EditImage",
+        "Target": "LooseSprites/Gembird",
+        "FromFile": "assets/Gembird.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 256, "Height": 64 }, 
+        "ToArea": { "X": 0, "Y": 0, "Width": 256, "Height": 64 },
+        "When":{ 
+            "Reskin Gembirds": "True"
+        },
+         "Update": "OnTimeChange"
+     },
+     {
+        "Action": "EditImage",
+        "Target": "LooseSprites/Cursors2",
+        "FromFile": "assets/Cursor_Gembirds.png",
+        "FromArea": { "X": 0, "Y": 0, "Width": 208, "Height": 18 }, 
+        "ToArea": { "X": 0, "Y": 302, "Width": 208, "Height": 18 },
+        "When":{ 
+            "Reskin Gembirds": "True"
+        },
+         "Update": "OnTimeChange"
+     },
+
 
      // 34 to 22, new target is 1488
      {
@@ -261,6 +340,54 @@
          "Operation": "Append",
          "Target": ["Fields", "Mountain", 3],//winter forage 
          "Value": "2236 .6",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Railroad", 0],//spring forage 
+         "Value": "2246 .4 2236 .3 2262 .3 2263 .3 2264 .3 2265 .3 2266 .3 2267 .3",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Railroad", 1],//summer forage 
+         "Value": "2246 .6 2245 .4 2235 .5 2256 .5 2257 .5 2258 .5 2259 .5 2260 .5 2261 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Railroad", 2],//fall forage 
+         "Value": "2246 .6 2235 .6 2272 .5 2273 .5 2274 .5 2275 .5 2276 .5 2277 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Railroad", 3],//winter forage 
+         "Value": "2236 .6",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Backwoods", 0],//spring forage 
+         "Value": "2240 .5 2262 .5 2263 .5 2264 .5 2265 .5 2266 .5 2267 .5 2237 .6 2244 .4",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Backwoods", 1],//summer forage 
+         "Value": "2240 .5 2234 .6 2256 .5 2257 .5 2258 .5 2259 .5 2260 .5 2261 .5 2242 .6",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Backwoods", 2],//fall forage 
+         "Value": "2240 .5 2234 .6 2272 .5 2273 .5 2274 .5 2275 .5 2276 .5 2277 .5 2241 .6",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Backwoods", 3],//winter forage 
+         "Value": "2240 .5 2243 .6",
          "Delimiter": " " // if there are already values, add a space between them and the new ones
       },
       {
